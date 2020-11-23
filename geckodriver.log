@@ -1,0 +1,14 @@
+1606112198483	geckodriver	INFO	Listening on 127.0.0.1:53179
+1606112198491	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile3Mh3qj"
+1606112199037	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1606112199038	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1606112199041	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1606112199041	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Sandbox: seccomp sandbox violation: pid 7936, tid 7936, syscall 315, args 7936 140300253379072 56 0 23 140300253379072.
+Sandbox: seccomp sandbox violation: pid 7961, tid 7961, syscall 315, args 7961 140544144942784 56 0 34 140544144942784.
+JavaScript error: undefined, line 14: Error: An unexpected error occurred
+JavaScript error: moz-extension://3d1814ba-d52b-4231-89fa-4e8ae43f9a13/lib/picture_in_picture_overrides.js, line 15: Error: Incorrect argument types for pictureInPictureParent.setOverrides.
+JavaScript error: resource:///modules/sessionstore/SessionStore.jsm, line 1325: uncaught exception: 2147746065
+1606112201343	Marionette	INFO	Listening on port 40237
+1606112201415	Marionette	WARN	TLS certificate errors will be ignored for this session
+1606112202878	Marionette	INFO	Stopped listening on port 40237

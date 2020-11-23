@@ -18,7 +18,7 @@ def take_user_info():
     global username 
     username = input("Enter your username: ").lower()
     global password 
-    password = input("Enter instagram password: ")
+    password = getpass.getpass("Enter instagram password: ")
     if password == "" or username == "":
         print(f"{Fore.RED}Password and username both fields are required.{Fore.RESET}")
         take_user_info()
