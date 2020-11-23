@@ -16,11 +16,11 @@ python main.py
 
 ## supported browsers
 
--   chrome
--   firefox
--   opera
--   safari
--   IE
+- chrome
+- firefox
+- opera
+- safari
+- IE
 
 ```
 $ python main.py -b firefox
@@ -28,10 +28,10 @@ $ Enter your username:
 $ Enter instagram password:
 ```
 
-### selenium webdriver
+### selenium browser webdriver
 
--   chrome [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/home)
--   firefox [geckodriver](https://github.com/mozilla/geckodriver/releases)
--   opera [OperaChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/home)
--   safari [SafariDriver](https://developer.apple.com/safari/download/)
--   IE [IEDriverServer](http://selenium-release.storage.googleapis.com/index.html)
+- chrome [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/home)
+- firefox [geckodriver](https://github.com/mozilla/geckodriver/releases)
+- opera [OperaChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/home)
+- safari [SafariDriver](https://developer.apple.com/safari/download/)
+- IE [IEDriverServer](http://selenium-release.storage.googleapis.com/index.html)
