@@ -24,8 +24,8 @@ python main.py
 
 ```
 $ python main.py -b firefox
-$ Enter your username:
-$ Enter instagram password:
+$ Enter your username: YOUR_USERNAME
+$ Enter instagram password: YOUR_PASSWORD
 ```
 
 ### selenium browser webdriver
