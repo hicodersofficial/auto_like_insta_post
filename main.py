@@ -18,7 +18,7 @@ def take_user_info():
     global username 
     username = input("Enter your username: ").lower()
     global password 
-    password = getpass.getpass("Enter instagram password: ", stream="None")
+    password = input("Enter instagram password: ")
     if password == "" or username == "":
         print(f"{Fore.RED}Password and username both fields are required.{Fore.RESET}")
         take_user_info()
@@ -102,7 +102,10 @@ browser     -b <option> --browser <option> set browser.
 
     print(f'{Fore.GREEN}waiting for {internetTime * 1.3} second{Fore.RESET}')
     sleep(internetTime * 1.3)
-    browser.execute_script('document.querySelector("body > div.RnEpo.Yx5HN > div > div > div > div.mt3GC > button.aOOlW.HoLwm").click()')
+    try:
+        browser.execute_script('document.querySelector("body > div.RnEpo.Yx5HN > div > div > div > div.mt3GC > button.aOOlW.HoLwm").click()')
+    except Exception as notification:
+        print(f"{Fore.RED}Notification dialog not closed{Fore.RESET}")
 
     sleep(1)
 
