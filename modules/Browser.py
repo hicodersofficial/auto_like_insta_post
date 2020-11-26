@@ -1,6 +1,6 @@
 from selenium import webdriver
 from colorama import Fore
-from Display import Display
+from modules.Display import Display
 
 class Browser(Display):
     def __init__(self, args):

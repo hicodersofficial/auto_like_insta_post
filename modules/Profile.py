@@ -1,8 +1,8 @@
-from global_variables import URL
-from Display import Display
+from modules.Display import Display
 from time import sleep
 from colorama import Fore
-from scripts import FOLLOW_SCRIPT, SINGLE_USER_POST_LIKE
+from config.global_variables import URL
+from config.scripts import FOLLOW_SCRIPT, SINGLE_USER_POST_LIKE
 
 class Profile(Display):
     def __init__(self):

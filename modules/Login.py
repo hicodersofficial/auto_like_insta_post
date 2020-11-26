@@ -1,9 +1,9 @@
 from getpass import getpass
-from global_variables import URL
-from Display import Display
+from modules.Display import Display
 from time import sleep
 from selenium.webdriver.common.keys import Keys  
-from scripts import USERNAMETEXTBOX_X_PATH, PASSWORDTEXTBOX_X_PATH, SUBMITBUTTON_CSS_SELECTOR
+from config.global_variables import URL
+from config.scripts import USERNAMETEXTBOX_X_PATH, PASSWORDTEXTBOX_X_PATH, SUBMITBUTTON_CSS_SELECTOR
 
 class Login(Display):
     def __init__(self):

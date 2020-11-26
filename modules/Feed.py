@@ -1,8 +1,8 @@
-from Browser import Browser
 from colorama import Fore
 from time import sleep
-from Display import Display
-from scripts import USER_FEED_LIKE, CLOSE_NOTIFICATION_DIALOG, CLOSE_SAVING_DIALOG
+from modules.Browser import Browser
+from modules.Display import Display
+from config.scripts import USER_FEED_LIKE, CLOSE_NOTIFICATION_DIALOG, CLOSE_SAVING_DIALOG
 
 class Feed(Display):
     def __init__(self):

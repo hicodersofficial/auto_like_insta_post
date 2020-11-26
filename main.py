@@ -1,14 +1,14 @@
 import os
 import sys
 from platform import platform
-from global_variables import APP_NAME
-from Browser import Browser
-from Login import Login
-from Utils import Utils
-from Config import Config
-from Feed import Feed
-from Display import Display
-from Profile import Profile
+from config.global_variables import APP_NAME
+from modules.Browser import Browser
+from modules.Login import Login
+from modules.Utils import Utils
+from modules.Config import Config
+from modules.Feed import Feed
+from modules.Display import Display
+from modules.Profile import Profile
 
 if __name__ == "__main__":
     display = Display()

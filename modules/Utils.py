@@ -1,5 +1,5 @@
 import sys
-from global_variables import APP_NAME
+from config.global_variables import APP_NAME
 from colorama import Fore
 
 class Utils:
