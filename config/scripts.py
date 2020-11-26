@@ -88,7 +88,7 @@ SINGLE_USER_POST_LIKE="""
             if (error.message === "Cannot read property 'getAttribute' of null")
             like();
         }
-        }, 2000);
+        }, 2500);
 
     }
     like();
@@ -97,10 +97,13 @@ SINGLE_USER_POST_LIKE="""
 FOLLOW_SCRIPT='''
     try {
         let node = document.querySelector("#react-root > section > main > div > header > section > div > div > div > div> div > span > span > button > div > span")
+
+        node = node ? node : document.querySelector("#react-root > section > main > div > header > section > div > div > div > div>  button > div > span")
+        
         if(node && node.getAttribute("aria-label") == "Following") { 
             console.log("You had already followed") 
         } else {
-            document.querySelector("#react-root > section > main > div > header > section > div > div > div > div > div > span > span > button").click()
+            document.querySelector("#react-root > section > main > div > header > section > div > div > div  button").click()
         }
     }
     catch(error) {
