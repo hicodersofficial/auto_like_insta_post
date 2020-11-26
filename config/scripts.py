@@ -84,7 +84,7 @@ SINGLE_USER_POST_LIKE="""
                         if (i !== posts.length) {
                             like();
                         } else {
-                            alert("Task compeleted. total post liked " i + 1);
+                            alert("Task compeleted. total post liked " + i + 1);
                         }
                     }, 500);
                 } catch (error) {
