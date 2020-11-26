@@ -48,48 +48,61 @@ SINGLE_USER_POST_LIKE="""
     let i = 0;
     function like() {
         let posts = document.querySelectorAll(
-        "#react-root > section > main > div > div._2z6nI > article > div > div > div > div > a"
+            "#react-root > section > main > div > div._2z6nI > article > div > div > div > div > a"
         );
         posts[i].click();
-        i+= 1
         if (i !== 0 && i % 21 === 0) {
-        document
-            .querySelector("html")
-            .scrollTo(0, document.querySelector("html").scrollHeight);
+            document
+                .querySelector("html")
+                .scrollTo(0, document.querySelector("html").scrollHeight);
         }
         setTimeout(() => {
-        try {
-            let label = document
-                .querySelector(
-                "body > div._2dDPU.CkGkG > div.zZYga > div > article > div.eo2As > section.ltpMr.Slqrh > span.fr66n > button > div > span > svg"
+            if (
+                document.querySelector(
+                    "body > div > div > div > article > div> div > div > div"
                 )
-                .getAttribute("aria-label");
-            if (label === "Like") {
-                document
-                .querySelector(
-                    "body > div._2dDPU.CkGkG > div.zZYga > div > article > div.eo2As > section.ltpMr.Slqrh > span.fr66n > button"
-                )
-                .click();
-            }
-            setTimeout(() => {
-                document
-                .querySelector(
-                    "body > div._2dDPU.CkGkG > div.Igw0E.IwRSH.eGOV_._4EzTm.BI4qX.qJPeX.fm1AK.TxciK.yiMZG > button"
-                )
-                .click();
-                if (i !== posts.length) {
-                like();
-                } else {
-                    alert("Task compeleted")
-                    window.close();
+            ) {
+                try {
+                    let label = document
+                        .querySelector(
+                            "body > div._2dDPU.CkGkG > div.zZYga > div > article > div.eo2As > section.ltpMr.Slqrh > span.fr66n > button > div > span > svg"
+                        )
+                        .getAttribute("aria-label");
+                    if (label === "Like") {
+                        document
+                            .querySelector(
+                                "body > div._2dDPU.CkGkG > div.zZYga > div > article > div.eo2As > section.ltpMr.Slqrh > span.fr66n > button"
+                            )
+                            .click();
+                    }
+                    setTimeout(() => {
+                        document
+                            .querySelector(
+                                "body > div._2dDPU.CkGkG > div.Igw0E.IwRSH.eGOV_._4EzTm.BI4qX.qJPeX.fm1AK.TxciK.yiMZG > button"
+                            )
+                            .click();
+                        if (i !== posts.length) {
+                            like();
+                        } else {
+                            alert("Task compeleted. total post liked " i + 1);
+                        }
+                    }, 500);
+                } catch (error) {
+                    if (
+                        error.message ===
+                        "Cannot read property 'getAttribute' of null"
+                    ) {
+                        like();
+                        return;
+                    }
                 }
-            }, 500);
-        } catch (error) {
-            if (error.message === "Cannot read property 'getAttribute' of null")
-            like();
-        }
-        }, 2500);
-
+            } else {
+                console.log("came over here", i);
+                like();
+                return;
+            }
+            i += 1;
+        }, 1000);
     }
     like();
 """
@@ -107,6 +120,6 @@ FOLLOW_SCRIPT='''
         }
     }
     catch(error) {
-        
+        console.log(error + " :insta auto like")
     }
 '''
