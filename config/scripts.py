@@ -102,7 +102,7 @@ SINGLE_USER_POST_LIKE="""
                 return;
             }
             i += 1;
-        }, 1000);
+        }, 2000);
     }
     like();
 """
