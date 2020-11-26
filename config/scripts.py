@@ -84,7 +84,7 @@ SINGLE_USER_POST_LIKE="""
                         if (i !== posts.length) {
                             like();
                         } else {
-                            alert("Task compeleted. total post liked " + i + 1);
+                            alert("Task compeleted. total post liked " + parseInt(i + 1));
                         }
                     }, 500);
                 } catch (error) {
@@ -97,7 +97,7 @@ SINGLE_USER_POST_LIKE="""
                     }
                 }
             } else {
-                console.log("came over here", i);
+                console.log("Your inter seems slow.");
                 like();
                 return;
             }
