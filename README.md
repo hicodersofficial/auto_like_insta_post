@@ -2,19 +2,25 @@
 
 simple auto liking instagram post.
 
-### install requirements.txt
+This app can like your feed post or single user posts.
 
-```
-pip install -r requirements.txt
-```
+### Install requirements.txt
 
 > make sure to have selenium drivers for the browsers in **PATH**.
 
 ```
-python main.py
+$ pip install -r requirements.txt
 ```
 
-## supported browsers
+### Run
+
+run the app just by running the following command.
+
+```
+$ python main.py
+```
+
+## Supported browsers
 
 - chrome
 - firefox
@@ -28,7 +34,26 @@ $ Enter your username: YOUR_USERNAME
 $ Enter instagram password: YOUR_PASSWORD
 ```
 
-### selenium browser webdriver
+### Help for app.
+
+open help for the app.
+
+```
+$ python main.py --help
+```
+
+```
+help for AUTO LIKE INSTA POST.
+
+help        -h  --help open help for AUTO LIKE INSTA POST.
+browser     -b <option> --browser <option> set browser.
+user        -u <username> likes all post of the users from your account.
+follow      -f [-u <username> -f <true>] include -f true flag to follow user and like.
+```
+
+### Selenium browser webdriver
+
+download drivers for your browser.
 
 - chrome [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/home)
 - firefox [geckodriver](https://github.com/mozilla/geckodriver/releases)
