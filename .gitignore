@@ -1,3 +1,5 @@
 __pycache__
 geckodriver.log
 debug.log
+*.js
+.prettierrc
