@@ -1,8 +1,8 @@
 # AUTO LIKE INSTA POST (BOT)
 
-simple auto liking instagram post.
+simple auto liking instagram posts.
 
-This app can like your feed post or single user posts.
+This app can like your feed posts or single user posts.
 
 ### Install requirements.txt
 
