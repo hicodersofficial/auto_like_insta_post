@@ -61,6 +61,8 @@ download drivers for your browser.
 - safari [SafariDriver](https://developer.apple.com/safari/download/)
 - IE [IEDriverServer](http://selenium-release.storage.googleapis.com/index.html)
 
+## Screenshot
+
 ![](./Screenshot.png)
 
 ## Thank You 🙏
