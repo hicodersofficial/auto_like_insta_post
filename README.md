@@ -20,6 +20,14 @@ run the app just by running the following command.
 $ python main.py
 ```
 
+Follow user and likes his all post by running following command.
+
+> If you don't want to follow the user but want to just like his post then omit the "`-f true`" flag
+
+```
+$ python main.py -u rollsroycecars -f true
+```
+
 ## Supported browsers
 
 - chrome
