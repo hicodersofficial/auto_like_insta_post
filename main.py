@@ -16,12 +16,13 @@ if __name__ == "__main__":
     try:
         os.system("cls" if 'Windows' in platform() else 'clear')
         args = sys.argv
+        browser = Browser(args)
         utils = Utils(args)
         utils.print_name()
         login = Login()
         config = Config()
         config.estimated_time(display.stats_estimated_time)
-        browser = Browser(args)
+        browser.open_browser()
         login.login(browser.browser, config.internetTime)
 
         if '-u' in args:
