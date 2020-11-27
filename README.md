@@ -55,8 +55,10 @@ $ python main.py --help
 help for AUTO LIKE INSTA POST.
 
 help        -h  --help open help for AUTO LIKE INSTA POST.
-browser     -b <option> --browser <option> opens your favorite browser. supported browsers [chrome, firefox, safari, edge, ie].
-headless    -hl runs browser in headless mode. supported headless browsers are [chrome, firefox]
+browser     -b <option> --browser <option> opens your favorite browser.
+            supported browsers [chrome, firefox, safari, edge, ie].
+headless    -hl runs browser in headless mode.
+            supported headless browsers are [chrome, firefox]
 user        -u <username> likes all post of the users from your account.
 follow      -f [-u <username> -f <true>] include -f true flag to follow user and like.
 ```
