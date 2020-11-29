@@ -16,6 +16,8 @@ $ pip install -r requirements.txt
 
 run the app just by running the following command.
 
+The below command like your feed posts.
+
 ```
 $ python main.py
 ```
@@ -26,6 +28,14 @@ Follow user and likes his all post by running following command.
 
 ```
 $ python main.py -u rollsroycecars -f true
+```
+
+Send message to the user.
+
+```
+$ python main.py -m hello -u hi.coders -ml 10
+        or
+$ python main.py -m "hello" -u hi.coders -ml 10 -mii -mti 50 -mi 1
 ```
 
 ## Supported browsers
@@ -54,13 +64,21 @@ $ python main.py --help
 ```
 help for AUTO LIKE INSTA POST.
 
-help        -h  --help open help for AUTO LIKE INSTA POST.
-browser     -b <option> --browser <option> opens your favorite browser.
-            supported browsers [chrome, firefox, safari, edge, ie].
-headless    -hl runs browser in headless mode.
-            supported headless browsers are [chrome, firefox]
-user        -u <username> likes all post of the users from your account.
-follow      -f [-u <username> -f <true>] include -f true flag to follow user and like.
+help          -h  --help open help for AUTO LIKE INSTA POST.
+browser       -b <option> --browser <option> opens your favorite browser.
+              supported browsers [chrome, firefox, safari, edge, ie].
+load time     -lt <second> average loading time for web.
+scroll pages  -sp <number> of page to scroll and like
+headless      -hl runs browser in headless mode.
+              supported headless browsers are [chrome, firefox]
+user          -u <username> likes all post of the users from your account.
+follow        -f [-u <username> -f <true>] include -f true flag to follow user and like.
+message       -m [-m <message> -u <username> ] send message to username provided.
+message limit -ml <number> message limit to send.
+MTI           -mti  <millisecond> MIT or message typing interval is typing interval between each character in millisecond.
+MII           -mii include this flag if you want to send message sent index(number). eg [1 hi, 2 hi]
+MI            -mi <second> include this flag if you want to wait each time before sending message.
+              (interval for each message in second)
 ```
 
 ### Selenium browser webdriver

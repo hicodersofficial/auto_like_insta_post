@@ -1,5 +1,7 @@
 __pycache__
 geckodriver.log
 debug.log
+ghostdriver.log
 *.js
 .prettierrc
+.vscode

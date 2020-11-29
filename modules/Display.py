@@ -1,4 +1,5 @@
 from colorama import Fore
+import sys
 class Display:
 
     def __init__(self):
@@ -27,8 +28,11 @@ class Display:
         print(f"{Fore.YELLOW}Navgating to feed page...{Fore.RESET}")
     
     def closing(self):
-        print("Done: exiting all the processes")
+        print(f"{Fore.YELLOW}Done: exiting all the processes{Fore.RESET}")
         print(f"{Fore.BLUE}Bye{Fore.RESET}")
     
     def pretty(self, msg):
         print(f"{Fore.BLUE}{msg}{Fore.RESET}")
+    def exit(self, msg):
+        print(f"{Fore.RED}{msg}{Fore.RESET}")
+        sys.exit()

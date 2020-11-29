@@ -30,6 +30,5 @@ class Profile(Display):
             super().pretty(f"Started liking {Fore.RED}♥{Fore.YELLOW} @{username} posts.")
             browser.execute_script(SINGLE_USER_POST_LIKE)
             sleep(2)
-            
         else:
             super().warning("Username required < -u username >")

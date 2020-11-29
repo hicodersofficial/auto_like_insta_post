@@ -21,6 +21,7 @@ def USER_FEED_LIKE(pages):
     const loadPage = () => {
         if(currentPage <= totalPageToLoad) {
             setTimeout(() => {
+                console.log("scrolled page " + currentPage)
                 document
                     .querySelector("html")
                     .scrollTo(
@@ -84,7 +85,7 @@ SINGLE_USER_POST_LIKE="""
                         if (i !== posts.length) {
                             like();
                         } else {
-                            alert("Task compeleted. total post liked " + parseInt(i + 1));
+                            alert("Task completed. total post liked " + parseInt(i + 1));
                         }
                     }, 500);
                 } catch (error) {
@@ -123,3 +124,15 @@ FOLLOW_SCRIPT='''
         console.log(error + " :insta auto like")
     }
 '''
+
+CLICK_MESSAGE_BUTTON="""
+document.querySelector("#react-root > section > main > div > header > section > div > div > div > div > div > button").click()
+"""
+
+MESSAGE_TEXTAREA_XPATH="""
+//*[@id="react-root"]/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div/div[2]/textarea
+"""
+
+MESSAGE_SEND_BUTTON_XPATH="""
+//*[@id="react-root"]/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div/div[3]/button
+"""
