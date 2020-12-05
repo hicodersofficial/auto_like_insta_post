@@ -1,5 +1,9 @@
 # AUTO LIKE INSTA POST (BOT)
 
+<p align="center">
+        <img width="200" src="https://raw.githubusercontent.com/hicodersofficial/images/main/insta-bot.png" />
+</p>
+
 simple auto liking instagram posts.
 
 This app can like your feed posts or single user posts.
