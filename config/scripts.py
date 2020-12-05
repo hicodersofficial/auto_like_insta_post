@@ -45,12 +45,12 @@ CLOSE_NOTIFICATION_DIALOG='document.querySelector("body > div.RnEpo.Yx5HN > div 
 
 
 
-SINGLE_USER_POST_LIKE="""
-    let i = 0;
+def SINGLE_USER_POST_LIKE(isHashtag):
+    posts = "document.querySelectorAll('#react-root > section > main > article > div > div > div > div > div > a');"  if isHashtag else "document.querySelectorAll('#react-root > section > main > div > div._2z6nI > article > div > div > div > div > a');"
+
+    return """let i = 0;
     function like() {
-        let posts = document.querySelectorAll(
-            "#react-root > section > main > div > div._2z6nI > article > div > div > div > div > a"
-        );
+        let posts = """+ posts + """
         posts[i].click();
         if (i !== 0 && i % 21 === 0) {
             document

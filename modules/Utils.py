@@ -17,6 +17,7 @@ load time     -lt <second> average loading time for web.
 scroll pages  -sp <number> of page to scroll and like
 headless      -hl runs browser in headless mode. supported headless browsers are [chrome, firefox]
 user          -u <username> likes all post of the users from your account.
+hashtag       -ht likes all the post of hashtag. <-u hashtag -ht> 
 follow        -f [-u <username> -f <true>] include -f true flag to follow user and like. 
 message       -m [-m <message> -u <username> ] send message to username provided.
 message limit -ml <number> message limit to send.

@@ -72,10 +72,12 @@ scroll pages  -sp <number> of page to scroll and like
 headless      -hl runs browser in headless mode.
               supported headless browsers are [chrome, firefox]
 user          -u <username> likes all post of the users from your account.
+hashtag       -ht likes all the post of hashtag. <-u hashtag -ht>
 follow        -f [-u <username> -f <true>] include -f true flag to follow user and like.
 message       -m [-m <message> -u <username> ] send message to username provided.
 message limit -ml <number> message limit to send.
-MTI           -mti  <millisecond> MIT or message typing interval is typing interval between each character in millisecond.
+MTI           -mti  <millisecond> MIT or message typing interval is
+                    typing interval between each character in millisecond.
 MII           -mii include this flag if you want to send message sent index(number). eg [1 hi, 2 hi]
 MI            -mi <second> include this flag if you want to wait each time before sending message.
               (interval for each message in second)

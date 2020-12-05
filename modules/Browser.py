@@ -2,6 +2,7 @@ from selenium import webdriver
 from colorama import Fore
 from modules.Display import Display
 import sys
+
 class Browser(Display):
     def __init__(self, args):
         self.driver = None

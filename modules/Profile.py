@@ -11,6 +11,8 @@ class Profile(Display):
     def single_user_post_like(self, browser, args, internetTime, pages):
         username = None
         follow = None
+        isHashtag=False
+
         if '-u' in args:
             try:
                 username = args[args.index('-u') + 1]
@@ -18,17 +20,20 @@ class Profile(Display):
                 super().warning("Username required < -u username >")
         if '-f' in args  and '-u' in args and args[args.index('-f') + 1].lower() == 'true':
             follow = True
+        if '-ht' in args and '-u' in args:
+            isHashtag = True
 
         if username:
-            super().navigating_url(f"{URL}{username}")
-            browser.get(f"{URL}{username}")
+            url = f"{URL}{'explore/tags/' if isHashtag else ''}{username}"
+            super().navigating_url(url)
+            browser.get(url)
             super().wait_time(internetTime)
             sleep(internetTime)
             if(follow):
                 super().pretty(f"followed @{username}")
                 browser.execute_script(FOLLOW_SCRIPT)
             super().pretty(f"Started liking {Fore.RED}♥{Fore.YELLOW} @{username} posts.")
-            browser.execute_script(SINGLE_USER_POST_LIKE)
+            browser.execute_script(SINGLE_USER_POST_LIKE(isHashtag))
             sleep(2)
         else:
             super().warning("Username required < -u username >")
